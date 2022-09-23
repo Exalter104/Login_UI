@@ -49,3 +49,4 @@ web/
 ios/
 macos/
 linux/
+.vscode/

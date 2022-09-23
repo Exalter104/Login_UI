@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: const Color(0x000fffff),
+        backgroundColor: Colors.white,
         body: SafeArea(
           child: Column(
             children: [
@@ -167,7 +167,7 @@ class MyApp extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 13,
                         fontFamily: "Rubik Regular",
-                        color: Color.fromARGB(255, 0, 0, 0)),
+                        color: Color.fromARGB(255, 29, 29, 29)),
                   ),
                   Text(
                     'Sign Up',
