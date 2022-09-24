@@ -56,7 +56,7 @@ class SignUp extends StatelessWidget {
                 height: 24,
               ),
               const Text(
-                "Log in",
+                "Sign Up",
                 style: TextStyle(fontFamily: 'Rubik Medium', fontSize: 20),
               ),
               const SizedBox(
@@ -80,7 +80,7 @@ class SignUp extends StatelessWidget {
                     fillColor: const Color(0xffF8F9FA),
                     filled: true,
                     prefixIcon: const Icon(
-                      Icons.email_outlined,
+                      Icons.person_outline,
                       color: Color(0xff323F4B),
                     ),
                     focusedBorder: OutlineInputBorder(
@@ -92,7 +92,50 @@ class SignUp extends StatelessWidget {
                   ),
                 ),
               ),
-//its password input feild
+//its Contact input feild
+              Padding(
+                padding: const EdgeInsets.all(17),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    hintText: 'Contact',
+                    fillColor: const Color(0xffF8F9FA),
+                    filled: true,
+                    prefixIcon: const Icon(
+                      Icons.phone_android_outlined,
+                      color: Color(0xff323F4B),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        color: Color(0xff323F4B),
+                      ),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ),
+//its email input feild
+              Padding(
+                padding: const EdgeInsets.all(17),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    hintText: 'Password',
+                    fillColor: const Color(0xffF8F9FA),
+                    filled: true,
+                    prefixIcon: const Icon(
+                      Icons.email_outlined,
+                      color: Color(0xff323F4B),
+                    ),
+                    suffixIcon: const Icon(Icons.visibility_off_outlined),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        color: Color(0xff323F4B),
+                      ),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ),
+              //its password input feild
               Padding(
                 padding: const EdgeInsets.all(17),
                 child: TextFormField(
@@ -114,24 +157,8 @@ class SignUp extends StatelessWidget {
                   ),
                 ),
               ),
-//its forgot button link
-              Padding(
-                padding: const EdgeInsets.only(right: 8.00),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: const [
-                    Text(
-                      "Forgot Password?",
-                      style: TextStyle(fontWeight: FontWeight.bold),
-                    )
-                  ],
-                ),
-              ),
-              const SizedBox(
-                height: 250,
-              ),
 
-// its Login Button
+// its SignUp Button
               Center(
                 child: Container(
                   height: 50,
@@ -142,7 +169,7 @@ class SignUp extends StatelessWidget {
                   ),
                   child: const Center(
                       child: Text(
-                    'Log in',
+                    'SIGN UP',
                     style: TextStyle(
                         fontSize: 17,
                         fontFamily: "Rubik Regular",
@@ -158,14 +185,14 @@ class SignUp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
                   Text(
-                    'Dont have an Account?',
+                    'Alerady have an Account?',
                     style: TextStyle(
                         fontSize: 13,
                         fontFamily: "Rubik Regular",
                         color: Color.fromARGB(255, 0, 0, 0)),
                   ),
                   Text(
-                    'Sign Up',
+                    'Log In',
                     style: TextStyle(
                         fontSize: 13,
                         fontFamily: "Rubik Regular",

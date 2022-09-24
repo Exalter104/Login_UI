@@ -13,12 +13,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        resizeToAvoidBottomInset: false,
         backgroundColor: Colors.white,
-        body: SafeArea(
+        body: SingleChildScrollView(
           child: Column(
             children: [
               const SizedBox(
-                height: 70,
+                height: 110,
               ),
 // its Logo image of Login
               Row(
@@ -26,8 +27,8 @@ class MyApp extends StatelessWidget {
                 children: [
                   Image.asset(
                     'images/logo.png',
-                    height: 35,
-                    width: 35,
+                    height: 50,
+                    width: 50,
                   ),
                   const SizedBox(
                     width: 6,
@@ -40,7 +41,8 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(
                             color: Color.fromARGB(255, 24, 23, 23),
                             fontFamily: 'Rubik Medium',
-                            fontSize: 20),
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
                       ),
                       Text(
                         "Box",
@@ -62,7 +64,10 @@ class MyApp extends StatelessWidget {
               ),
               const Text(
                 "Log in",
-                style: TextStyle(fontFamily: 'Rubik Medium', fontSize: 20),
+                style: TextStyle(
+                    fontFamily: 'Rubik Medium',
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
               ),
               const SizedBox(
                 height: 10,
@@ -133,7 +138,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 250,
+                height: 170,
               ),
 
 // its Login Button
