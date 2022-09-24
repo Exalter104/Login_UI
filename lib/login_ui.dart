@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'counter_app.dart';
+
 void main() {
-  runApp(const MyApp());
+  runApp(Counter());
 }
 
 class MyApp extends StatelessWidget {
